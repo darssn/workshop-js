@@ -39,7 +39,7 @@ var villesMajusculesSeTerminantParS = villes
 
 .filter(function(element){
 
-    return element.lastIndexOf("s");
+    return element.endsWith("s");
  
  })
 

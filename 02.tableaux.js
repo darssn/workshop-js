@@ -15,7 +15,7 @@ var lettreADansToutesLesVilles = villes.every(function(element){
 
 })
 
-console.log("lettreADansToutesLesVilles = "+ lettreADansToutesLesVilles);
+console.log("lettreADansToutesLesVilles =", lettreADansToutesLesVilles);
 
 
 var auMoinsUneVilleAvecUnTiret = villes.some(function(element){
@@ -23,7 +23,7 @@ var auMoinsUneVilleAvecUnTiret = villes.some(function(element){
     return element.includes("-");
 });
 
-console.log("auMoinsUneVilleAvecUnTiret = "+ auMoinsUneVilleAvecUnTiret);
+console.log("auMoinsUneVilleAvecUnTiret =", auMoinsUneVilleAvecUnTiret);
 
 
 var villesSansTiretSansEspace = villes.filter(function(element){
@@ -32,7 +32,7 @@ var villesSansTiretSansEspace = villes.filter(function(element){
 
 });
 
-console.log("villesSansTiretSansEspace = ",villesSansTiretSansEspace );
+console.log("villesSansTiretSansEspace =",villesSansTiretSansEspace );
 
 
 var villesMajusculesSeTerminantParS = villes
@@ -50,4 +50,4 @@ var villesMajusculesSeTerminantParS = villes
 });
 
 
-console.log("villesMajusculesSeTerminantParS = ", villesMajusculesSeTerminantParS);
+console.log("villesMajusculesSeTerminantParS =", villesMajusculesSeTerminantParS);

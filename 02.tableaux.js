@@ -11,36 +11,35 @@ console.log(element);
 
 var lettreADansToutesLesVilles = villes.every(function(element){
 
-    return (element.indexOf("a")!== -1);
+    return element.includes("a");
 
 })
 
-console.log(lettreADansToutesLesVilles);
+console.log("lettreADansToutesLesVilles = "+ lettreADansToutesLesVilles);
 
 
 var auMoinsUneVilleAvecUnTiret = villes.some(function(element){
 
-    return element.indexOf("-")!== -1 ;
+    return element.includes("-");
 });
 
-console.log(auMoinsUneVilleAvecUnTiret);
+console.log("auMoinsUneVilleAvecUnTiret = "+ auMoinsUneVilleAvecUnTiret);
 
 
 var villesSansTiretSansEspace = villes.filter(function(element){
 
-
-    return ((element.indexOf(" ")==-1 )&& (element.indexOf("-") ==-1));
+    return ((!element.includes("-") )&& (!element.includes(" ")));
 
 });
 
-console.log(villesSansTiretSansEspace);
+console.log("villesSansTiretSansEspace = ",villesSansTiretSansEspace );
 
 
 var villesMajusculesSeTerminantParS = villes
 
 .filter(function(element){
 
-    return (element.charAt(element.length-1) ==="s");
+    return element.lastIndexOf("s");
  
  })
 
@@ -51,4 +50,4 @@ var villesMajusculesSeTerminantParS = villes
 });
 
 
-console.log(villesMajusculesSeTerminantParS);
+console.log("villesMajusculesSeTerminantParS = ", villesMajusculesSeTerminantParS);
